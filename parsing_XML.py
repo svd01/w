@@ -5,7 +5,12 @@ import os
 import xml.etree.cElementTree as ET
 
 def getBatchNameFromXml(XML_patch):
-
+    """
+        <ImportSession>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <Batches>
+                <Batch Name="2016-05012 12-09-12-675 (12:10:43.661)" Description="" Priority="4" BatchClassName="AlphaInsurance">
+        """
     try:
         tree = ET.parse(XML_patch)
         importSession = tree.getroot()
