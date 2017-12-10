@@ -27,4 +27,4 @@ all_batch_Names = []
 for file in files_list:
     all_batch_Names.append(getBatchNameFromXml(path_to_XML + file))
 
-print("/n".join(all_batch_Names))
+print("\n".join(all_batch_Names))      # new element in the array all_batch_Names is output from a new line
