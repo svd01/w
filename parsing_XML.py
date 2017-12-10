@@ -21,7 +21,7 @@ path_to_programm = "home/Git/Python/TiffFromXML/Project/"
 data_directory = "DATA"
 
 path_to_XML = path_to_programm + data_directory + "/XML/"   # full path: to the directory/folder - XML file
-files_list = os.listdir(path_to_XML)
+files_list = os.listdir(path_to_XML)    # the names of all files inside the folder are added
 
 all_batch_Names = []
 for file in files_list:
