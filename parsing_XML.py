@@ -17,7 +17,7 @@ def getBatchNameFromXml(XML_patch):
     except IOError as e:
         print(e)
 
-path_to_programm = "home/Git/Python/TiffFromXML/Project/"
+path_to_programm = "home/Git/Python/TiffFromXML/Project/"   # root directory
 data_directory = "DATA"
 
 path_to_XML = path_to_programm + data_directory + "/XML/"
