@@ -7,11 +7,11 @@ import xml.etree.cElementTree as ET
 def getBatchNameFromXml(XML_patch):
 
     try:
-        tree = ET.parse(XML_patch)
-        importSession = tree.getroot()
-        batches = importSession.find('Batches')
-        batch = batches[0].attrib
-        name = batch.get('Name')
+        tree = ET.parse(XML_patch)      # create an object witch "pars" file
+        importSession = tree.getroot()      # getting the main branch
+        batches = importSession.find('Batches')     # search in the attribute branch "Batches"
+        batch = batches[0].attrib   # take the first name before the delimiter
+        name = batch.get('Name')     # take the name
         return name
 
     except IOError as e:
