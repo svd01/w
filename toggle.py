@@ -65,7 +65,7 @@ for x in fused:
                 subprocess.call("awk '/Merge/ {print}' text > text_awk", shell=True)
                 subprocess.call("awk '{print $2}' text_awk > text", shell=True)
                 subprocess.call('VAR2="cat text"', shell=True)
-                subprocess.call('git reset -- hard $VAR2', shell=True)
+                subprocess.call('git reset --hard $VAR2', shell=True)
                 f = open ('text', 'w')
                 for i in branch1:
                     f.write(i + '\n')
