@@ -87,6 +87,7 @@ for x in fused:
                 subprocess.call ('git merge --squash $VAR1', shell=True)
                 subprocess.call ('rm -rf text', shell=True)
 
+"""I understand that this is more a crooked use of git.cli than python"""
 
 
 
