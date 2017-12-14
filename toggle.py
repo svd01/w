@@ -74,7 +74,7 @@ for x in fused:
                 subprocess.call ('git merge --squash $VAR3', shell=True)
                 subprocess.call ('rm -rf text', shell=True)
                 subprocess.call ('rm -rf text_awk', shell=True)
-                subprocess.call ("notify-send 'complete! ))'", shell=True)
+                subprocess.call ("notify-send 'ready? ))'", shell=True)
 
 
             else:
@@ -87,7 +87,7 @@ for x in fused:
                 subprocess.call ('git checkout $VAR1', shell=True)
                 subprocess.call ('git merge --squash $VAR1', shell=True)
                 subprocess.call ('rm -rf text', shell=True)
-                subprocess.call ("notify-send 'complete! ))'", shell=True)
+                subprocess.call ("notify-send 'ready? ))'", shell=True)
 
 
 
